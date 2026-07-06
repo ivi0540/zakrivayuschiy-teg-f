@@ -12,6 +12,10 @@
   --background-color: #fff;
   /* colors ] */
 
+  /* block-sizes [ */
+  --content-width: 700px;
+  /* block-sizes ] */
+
   --background-image:
     repeating-linear-gradient(
       90deg,
