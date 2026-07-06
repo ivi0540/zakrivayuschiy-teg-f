@@ -1,9 +1,16 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
+  /* fonts [ */
   --main-font: "Inter", sans-serif;
   --accent-font: "PressStart2P", fantasy;
   --main-font-weight: 400;
   --title-font-weight: 700;
+  /* fonts ] */
+
+  /* colors [ */
+  --text-color: #000;
+  --background-color: #fff;
+  /* colors ] */
 
   --background-image:
     repeating-linear-gradient(
