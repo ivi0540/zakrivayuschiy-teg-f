@@ -13,9 +13,10 @@
   --stroke-color: #fff;
   /* colors ] */
 
-  /* block-sizes [ */
+  /* sizes [ */
   --content-width: 700px;
-  /* block-sizes ] */
+  --main-card-list: 49px;
+  /* sizes ] */
 
   --background-image:
     repeating-linear-gradient(
@@ -33,4 +34,9 @@
       transparent 4px
     ),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+}
+@media (max-width: 376px) {
+  :root {
+    --main-card-list: 51px;
+  }
 }
