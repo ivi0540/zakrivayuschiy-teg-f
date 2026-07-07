@@ -1,6 +1,8 @@
 /* Здесь вы напишете основную часть стилей страницы.
 
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
+Будьте внимательны! Для корректной работы скриптов на этом сайте нужно,
+чтобы в HTML некоторые классы были названы особым образом:
+
 ✦ like-icon — для svg-иконки анимированного сердца
 ✦ card__like-button — для кнопки Like рядом с иконкой
 ✦ card__icon-button — для кнопки, оборачивающей иконку
@@ -37,7 +39,6 @@
   margin-top: 100px;
   padding-top: 120px;
   padding-bottom: clamp(7.5rem, 7.39rem + 0.47vw, 7.813rem);
-
   color: var(--text-color);
   background-color: var(--background-color);
 }
@@ -89,6 +90,7 @@
 }
 
 .main__img {
+  display: block;
   width: 100%;
   height: auto;
 }
@@ -99,11 +101,11 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 25px;
-  margin-top: 5px;
+  margin-top: clamp(0.625rem, 0.202rem + 0.47vw, 0.313rem);
   padding-top: 17px;
+  padding-right: 25px;
   padding-bottom: 17px;
   padding-left: 25px;
-  padding-right: 25px;
 }
 
 .main__paragraph {
@@ -122,7 +124,17 @@
   margin-left: auto;
 }
 
-.main__btn-like {
+.card__icon-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 0;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.card__like-button {
   border: 2px solid var(--text-color);
   border-radius: 0;
   padding: 10px 35px;
@@ -133,6 +145,12 @@
   font-style: normal;
   line-height: 90%;
   background-color: var(--background-color);
+}
+
+.like-icon {
+  display: block;
+  width: 39px;
+  height: 36px;
 }
 
 /* main ] */
