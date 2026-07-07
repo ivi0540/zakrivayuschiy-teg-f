@@ -1056,13 +1056,22 @@
           </div>
         </li>
       </ul>
-      <button class="main__btn-save">
+      <button class="main__btn-save" onclick="window['save-modal'].showModal()">
         <svg width="28" height="28" class="main__icon-save">
           <use href="#floppy-icon"></use>
         </svg>
         <span class="button__text"> Сохранить на память </span>
       </button>
     </main>
+
+    <dialog class="modal" id="save-modal">
+      <svg width="28" height="28" class="main__icon-save">
+        <use href="#floppy-icon"></use>
+      </svg>
+      <p class="modal-paragraph">Вставьте дискету, чтобы продолжить</p>
+      <button class="modal-ok-btn" onclick="window['save-modal'].close()">ОК</button>
+    </dialog>
+
     <script src="./scripts/like.js"></script>
   </body>
 </html>
