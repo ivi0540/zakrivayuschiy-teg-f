@@ -9,6 +9,7 @@
 ✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
+
 */
 
 .page {
@@ -408,12 +409,14 @@
   transition: fill 0.3s linear 0.05s;
 }
 
+.like-icon {
+  pointer-events: all; /* ← разрешаем события на всей иконке */
+}
 
-/* test */
-/* .card__icon-button:hover .core {
+.card__icon-button:hover .like-icon .core {
   background: red;
   fill: red;
-} */
+}
 
 /* animated-elements ] */
 
