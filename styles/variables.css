@@ -18,7 +18,7 @@
 
   /* sizes [ */
   --content-width: 700px;
-  --main-card-list: 45px;
+  --main-card-list: 47px;
   /* sizes ] */
 
   --background-image:
@@ -40,6 +40,6 @@
 }
 @media (max-width: 376px) {
   :root {
-    --main-card-list: 51px;
+    --main-card-list: 49px;
   }
 }
