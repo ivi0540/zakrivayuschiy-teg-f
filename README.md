@@ -1,1 +1,1 @@
-https://github.com/ivi0540/zakrivayuschiy-teg-f
+https://ivi0540.github.io/zakrivayuschiy-teg-f/
