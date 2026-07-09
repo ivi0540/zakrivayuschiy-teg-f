@@ -11,12 +11,9 @@
   --text-color: #000;
   --background-color: #fff;
   --stroke-color: #fff;
-  --button-bg-color: #fff;
-  --button-text-color: #000000;
   
-  --contour-color: #000; /* цвет контура */
-  --animation-fill-color: #ff0000; /* красный для заливки и искр */
-  --animation-core-color: #ff0000; /* красный для сердцевины */
+  --contour-color: #000;
+  --animation-fill-color: #ff0000;
   /* colors ] */
 
   /* sizes [ */

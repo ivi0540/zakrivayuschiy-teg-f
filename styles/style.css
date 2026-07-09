@@ -66,6 +66,9 @@
   margin-top: 98px;
   padding-bottom: 100px;
   background-color: var(--background-color);
+  background-image: var(--background-image);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .main__card-list {
@@ -80,6 +83,7 @@
 .main__card-item {
   border: 2px solid var(--text-color);
   padding-bottom: 9px;
+  background-color: var(--background-color);
 }
 
 .main__title {
@@ -340,11 +344,15 @@
 /* image-filters ] */
 
 /* animated-elements [ */
-.heart {
+
+/* == 1 == */
+
+.like-icon {
+  pointer-events: all;
 }
 
 .contour {
-  transition: fill 0.1s linear;
+  transition: fill 0.1s linear 0s;
 }
 
 .main-body {
@@ -360,32 +368,51 @@
 
 .sparks {
   opacity: 0;
-  transition: opacity 0.3 ease;
+  transition: opacity 0.3s ease;
 }
 
-.like-icon:active .core {
-  fill: var(--animation-core-color);
+/* == 2 == */
+
+.like-icon:hover .main-body {
+  opacity: 1;
+  fill: var(--contour-color);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon:hover .core {
+  fill: var(--contour-color);
   transition: fill 0.3s linear 0s;
 }
+
+/* == 3 == */
 
 .like-icon:active .main-body {
-  fill: var(--animation-fill-color);
-  transition: fill 0.3s linear 0s;
-}
-
-.like-icon.is-liked .core {
-  fill: var(--animation-core-color);
-  transition: fill 0.3s linear 0s;
-}
-
-.like-icon.is-liked .main-body {
+  opacity: 1;
   fill: var(--animation-fill-color);
   transition: fill 0.3s linear 0.05s;
 }
 
+.like-icon:active .core {
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s linear 0s;
+}
+
+/* == 4 == */
+
 .like-icon.is-liked .contour {
   fill: var(--animation-fill-color);
   transition: fill 0.3s linear 0.06s;
+}
+
+.like-icon.is-liked .main-body {
+  opacity: 1;
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s linear 0s;
 }
 
 .like-icon.is-liked .heart {
@@ -394,26 +421,8 @@
 }
 
 .like-icon.is-liked .sparks {
-  opacity: 1;
   animation: sparks-appear 0.3s ease-in 0.3s 1;
 }
-
-.like-icon:hover .core {
-  fill: var(--animation-core-color);
-  transition: fill 0.3s linear 0s;
-}
-
-.like-icon:hover .main-body {
-  fill: var(--animation-fill-color);
-  transition: fill 0.3s linear 0.05s;
-}
-
-
-/* test */
-/* .card__icon-button:hover .core {
-  background: red;
-  fill: red;
-} */
 
 /* animated-elements ] */
 
