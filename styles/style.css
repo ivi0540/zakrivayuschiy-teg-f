@@ -166,9 +166,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: none;
   border: 2px solid transparent;
-  border-radius: 0;
   border-radius: 0;
   padding: 0;
   outline: none;
@@ -186,6 +184,7 @@
   display: block;
   width: 39px;
   height: 36px;
+  pointer-events: all;
 }
 
 .main__icon-save {
@@ -346,10 +345,6 @@
 /* animated-elements [ */
 
 /* == 1 == */
-
-.like-icon {
-  pointer-events: all;
-}
 
 .contour {
   transition: fill 0.1s linear 0s;
