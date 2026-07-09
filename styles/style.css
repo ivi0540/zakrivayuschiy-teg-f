@@ -411,8 +411,8 @@
 }
 
 .like-icon.is-liked .heart {
-  animation: heart-scale 0.3s ease-in 0.1s 1;
   transform-origin: center;
+  animation: heart-scale 0.3s ease-in 0.1s 1;
 }
 
 .like-icon.is-liked .sparks {
