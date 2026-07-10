@@ -223,7 +223,7 @@
   height: 100%;
 }
 
-.button {
+.button:hover {
   cursor: pointer;
 }
 
