@@ -37,8 +37,6 @@
   margin-top: 100px;
   border: 2px solid var(--text-color);
   padding: 130px 0px;
-  /* padding-top: 120px; */
-  /* padding-bottom: clamp(7.5rem, 7.39rem + 0.47vw, 7.813rem); */
   color: var(--text-color);
   background-color: var(--background-color);
 }
@@ -64,7 +62,6 @@
 
 /* main [ */
 .main {
-  /* margin-top: 98px; */
   margin-top: 96px;
   padding-bottom: 100px;
   background-color: var(--background-color);
@@ -94,15 +91,13 @@
   font-size: 18px;
   font-style: normal;
   line-height: normal;
-  /* font-variation-settings: "wght" 700; */
   font-variation-settings: "wght" 715;
 }
 
 .main__img-wrapper {
   position: relative;
   width: 100%;
-  height: clamp(23.438rem, 16.285rem + 30.52vw, 43.75rem);
-  /* height:  375px - 700px; */
+  height: clamp(23.438rem, 16.285rem + 30.52vw, 43.75rem); /* height:  375px - 700px; */
   overflow: hidden;
 }
 
@@ -165,7 +160,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* gap: 6px; */
+  gap: 6px;
   margin-left: auto;
   height: 37px;
 }
@@ -209,9 +204,8 @@
 /* main ] */
 
 /* buttons [*/
-.modal-ok-btn,
-.main__btn-save,
-.card__like-button {
+
+.button {
   position: relative;
   border: 2px solid var(--text-color);
   border-radius: 0;
@@ -229,21 +223,15 @@
   height: 100%;
 }
 
-.modal-ok-btn:hover,
-.main__btn-save:hover,
-.card__like-button:hover {
+.button {
   cursor: pointer;
 }
 
-.modal-ok-btn:focus-visible,
-.main__btn-save:focus-visible,
-.card__like-button:focus-visible {
+.button:focus-visible {
   box-shadow: 2px 2px 0 var(--text-color);
 }
 
-.modal-ok-btn::before,
-.main__btn-save::before,
-.card__like-button::before {
+.button::before {
   content: "";
   position: absolute;
   top: 0;
@@ -258,16 +246,12 @@
   transform-origin: left;
 }
 
-.modal-ok-btn:hover::before,
-.main__btn-save:hover::before,
-.card__like-button:hover::before {
+.button:hover::before {
   transform: scaleX(1);
 }
 
-.modal-ok-btn span,
-.main__btn-save span,
-.main__btn-save svg,
-.card__like-button span {
+.button span,
+.button svg {
   color: var(--background-color);
   mix-blend-mode: difference;
 }
@@ -296,7 +280,9 @@
 }
 
 .card__like-button {
-  padding: 10px 35px;
+  padding: 10px 0;
+  width: 130px;
+  height: 100%;
 }
 /* buttons ]*/
 
@@ -313,7 +299,7 @@
 }
 
 .modal::backdrop {
-  opacity: 0.5;
+  opacity: 0.75;
   background-color: var(--text-color);
 }
 
@@ -374,7 +360,6 @@
 }
 
 .main-body {
-  opacity: 0;
   fill: transparent;
   transition: fill 0.3s linear 0s;
 }
@@ -386,7 +371,6 @@
 
 .sparks {
   opacity: 0;
-  transition: opacity 0.3s ease;
 }
 
 /* == 2 == */
